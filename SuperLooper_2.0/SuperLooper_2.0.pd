@@ -1,0 +1,6 @@
+#N canvas 15 459 254 129 10;
+#X obj 33 61 SuperGuts/MainLoops;
+#X obj 33 32 SuperGuts/MainDrums;
+#X text 31 15 Drums/Synth/Input and Effects;
+#X text 29 80 Looping/Clock/Post Effects;
+#X connect 1 0 0 0;

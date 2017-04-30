@@ -1,0 +1,10 @@
+#N canvas 609 59 154 149 10;
+#X obj 10 11 notein 1;
+#X obj 10 34 stripnote;
+#X obj 10 98 outlet~;
+#X obj 10 68 notecheck \$1 \$2 \$3;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 1 0 3 0;
+#X connect 1 1 3 1;
+#X connect 3 0 2 0;
