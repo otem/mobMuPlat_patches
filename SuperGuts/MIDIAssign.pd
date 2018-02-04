@@ -1,0 +1,38 @@
+#N canvas 794 236 354 229 10;
+#X obj 213 152 send toGUI;
+#X msg 213 126 list /vol\$2 \$1;
+#X obj 15 25 ctlin \$2 1;
+#X obj 15 86 s lp\$1;
+#X text 17 5 Rec;
+#X obj 95 172 send toGUI;
+#X obj 95 48 / 127;
+#X obj 140 101 \$1;
+#X obj 140 80 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 95 126 pack f f;
+#X obj 95 23 ctlin \$4 1;
+#X msg 95 148 list /clear\$2 \$1;
+#X text 95 0 clear;
+#X text 213 1 volume;
+#X obj 213 23 ctlin \$5 1;
+#X obj 258 54 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 258 74 \$1;
+#X obj 213 102 pack f f;
+#X obj 15 54 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 0 0;
+#X connect 2 0 18 0;
+#X connect 6 0 8 0;
+#X connect 6 0 9 0;
+#X connect 7 0 9 1;
+#X connect 8 0 7 0;
+#X connect 9 0 11 0;
+#X connect 10 0 6 0;
+#X connect 11 0 5 0;
+#X connect 14 0 15 0;
+#X connect 14 0 17 0;
+#X connect 15 0 16 0;
+#X connect 16 0 17 1;
+#X connect 17 0 1 0;
+#X connect 18 0 3 0;
